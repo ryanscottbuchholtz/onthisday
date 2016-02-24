@@ -1,0 +1,204 @@
+/*whole document*/
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  font-size: 125%;
+}
+
+body {
+  font-family: 'Special Elite', cursive;
+  height: 100%;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.master-wrap {
+  min-height: 100%;
+}
+
+
+/*Header*/
+
+.main-header-wrap {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background-color: white;
+}
+
+.main-header {
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.headline {
+  text-align: center;
+  padding-top: 12px;
+}
+
+.headline span {
+  font-size: 2.0em;
+}
+
+/*Navigation*/
+
+nav {
+  margin-top: 12px;
+  border-top: 2px black solid;
+  border-bottom: 2px black solid;
+  background-color: #EFEFEF;
+}
+
+.navigation ul {
+  list-style: none;
+  text-align: center;
+}
+
+.navigation li {
+  padding: 8px 0px;
+}
+
+.navigation ul:first-child {
+  padding-left: 0px;
+}
+
+.navigation ul:last-child {
+  padding-right: 0px;
+}
+
+
+/*Body*/
+
+.main-body-wrap {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+
+#back,
+#back-top,
+#forward,
+#forward-top {
+  font-size: 2.5em;
+}
+
+#back-top {
+  float: left;
+  width: 10%;
+}
+
+#forward-top {
+  float: left;
+  width: 10%;
+}
+
+.answers,
+#today-question {
+  text-align: justify;
+  padding: 0 25px;
+}
+
+#today-question {
+  font-size: 1.2em;
+}
+
+.question {
+  float: left;
+  width: 80%;
+}
+
+.question-nav p {
+  clear: left;
+}
+.answers h3 {
+  padding: 15px 0 5px 0;
+}
+
+.answer {
+  margin: 15px 0;
+}
+
+#today-answer {
+  width: 80%;
+  height: 125px;
+  border-radius: 8px;
+}
+
+.buttons {
+  padding-top: 15px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 28px;
+  border: white;
+  width: 100px;
+}
+
+#submit {
+  background-color: #BDF271;
+
+}
+
+#clear {
+  background-color: #EFEFEF;
+}
+/*forward and backward buttons should be at the bottom of the main div when the screen is small.  When larger, the float left and right.*/
+
+
+/*Footer*/
+
+.foot-wrap {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: -100px;
+  height: 100px;
+  clear: both;
+  overflow: hidden;
+  }
+
+#back {
+  float: left;
+  width: 10%;
+}
+
+#today {
+  font-size: 2.0em;
+  padding-top: .3em;
+  float: left;
+  width: 80%;
+}
+
+#forward {
+  float: left;
+  width: 10%;
+}
+
+
+
+/*Media Queries*/
+
+@media (min-width: 769px) {
+  .main-header,
+  .main-body {
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
+  #title {
+    font-size: 2.5em;
+  }
+
+
+}
